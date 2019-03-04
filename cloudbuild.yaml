@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/docker-gcloud-make', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['tag', 'gcr.io/$PROJECT_ID/docker-gcloud-make', '$TAG_NAME']
+  args: ['tag', 'gcr.io/$PROJECT_ID/docker-gcloud-make', 'gcr.io/$PROJECT_ID/docker-gcloud-make:$TAG_NAME']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/docker-gcloud-make']
 - name: 'gcr.io/cloud-builders/docker'
