@@ -9,5 +9,5 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/docker-gcloud-make:$TAG_NAME']
 
 images: 
-- 'gcr.io/$PROJECT_ID/docker-gcloud-make:latest'
+- 'gcr.io/$PROJECT_ID/docker-gcloud-make'
 - 'gcr.io/$PROJECT_ID/docker-gcloud-make:$TAG_NAME'
